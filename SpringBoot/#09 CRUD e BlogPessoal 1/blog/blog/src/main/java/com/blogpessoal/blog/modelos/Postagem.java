@@ -8,6 +8,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -16,17 +17,13 @@ public class Postagem {
 	private @Id  @GeneratedValue (strategy=GenerationType.IDENTITY)long idPostagem;
 	private @NotBlank String titulo;
 	private @NotBlank String descricao;
-	@ManyToOne
-	@JoinColumn(name = "criadorId")
-	@JsonIgnoreProperties({"minhasPostagens"})
-	private Usuarios criador;
 	
-	public Usuarios getCriador() {
-		return criador;
-	}
-	public void setCriador(Usuarios criador) {
-		this.criador = criador;
-	}
+	@ManyToOne
+	@JsonIgnoreProperties({"postagens"})
+	private Tema tema;
+	
+	
+	
 	public long getIdPostagem() {
 		return idPostagem;
 	}
