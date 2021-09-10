@@ -1,4 +1,4 @@
-package com.lojadegames.lojadegames.controladores;
+package com.blogpessoal.blog.controladores;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +15,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lojadegames.lojadegames.modelos.Usuario;
-import com.lojadegames.lojadegames.modelos.UsuarioLogin;
-import com.lojadegames.lojadegames.repositorios.UsuarioRepository;
-import com.lojadegames.lojadegames.servicos.UsuarioService;
+import com.blogpessoal.blog.modelos.Usuario;
+import com.blogpessoal.blog.modelos.UsuarioLogin;
+import com.blogpessoal.blog.repositorios.UsuarioRepository;
+import com.blogpessoal.blog.servicos.UsuarioService;
+
+
 
 @RestController
 @RequestMapping("/usuarios")
@@ -57,6 +59,5 @@ public class UsuarioControlador {
 	public void deletarUsuarioPorId(@PathVariable(value = "id_usuario") Long idUsuario) {
 		usuarioRepository.deleteById(idUsuario);
 	}
-	
-	
+
 }

@@ -1,7 +1,7 @@
-package com.lojadegames.lojadegames.modelos;
+package com.blogpessoal.blog.modelos;
 
 public class UsuarioLogin {
-	
+
 	private String nome; 
 	private String email;
 	private String senha;
@@ -30,6 +30,4 @@ public class UsuarioLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	
-	
 }
