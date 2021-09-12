@@ -22,6 +22,19 @@ public class Usuario {
 	
 	@NotBlank
 	private String senha;
+	
+	
+
+	public Usuario(long idUsuario, String nome,String email,  String senha) {
+		super();
+		this.idUsuario = idUsuario;
+		this.nome = nome;
+		this.email = email;
+		this.senha = senha;
+	}
+	
+	public Usuario() { }
+
 
 	public long getIdUsuario() {
 		return idUsuario;
