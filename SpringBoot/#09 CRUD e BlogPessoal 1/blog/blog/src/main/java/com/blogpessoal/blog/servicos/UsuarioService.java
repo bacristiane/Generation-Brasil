@@ -49,5 +49,18 @@ public class UsuarioService {
 		}
 		return null;
 	}
+	
+	public Optional<?> alterarUsuario(UsuarioLogin usuarioParaAlterar) {
+		return repository.findById(usuarioParaAlterar.getIdUsuarioL()).map(usuarioExistente -> {
+			BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+			String result = encoder.encode(usuarioParaAlterar.getSenha());
+
+			usuarioExistente.setNome(usuarioParaAlterar.getNome());
+			usuarioExistente.setSenha(result);
+			return Optional.ofNullable(repository.save(usuarioExistente));
+		}).orElseGet(() -> {
+			return Optional.empty();
+		});
+	}
 
 }

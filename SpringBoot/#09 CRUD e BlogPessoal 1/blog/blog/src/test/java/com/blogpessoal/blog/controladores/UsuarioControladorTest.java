@@ -31,7 +31,7 @@ public class UsuarioControladorTest {
 	private TestRestTemplate testRestTemplate;
 	
 	private Usuario usuario;
-	private Usuario usuarioUpdate;
+	//private Usuario usuarioUpdate;
 	private Usuario usuarioAdmin;
 
 
@@ -50,7 +50,7 @@ public class UsuarioControladorTest {
 
 	usuario=new Usuario(0L,"Paulo Antunes","paulo@email.com.br","13465278");
 
-	usuarioUpdate=new Usuario(2L,"Paulo Antunes de Souza","paulo_souza@email.com.br","souza123");
+	//usuarioUpdate=new Usuario(2L,"Paulo Antunes de Souza","paulo_souza@email.com.br","souza123");
 
 	}
 
@@ -73,17 +73,17 @@ public class UsuarioControladorTest {
 		assertEquals(HttpStatus.OK, resposta.getStatusCode());
 	}
 
-	/*
-	 * @Test
-	 * 
-	 * @Order(3)
-	 * 
-	 * @DisplayName("😳 Alterar Usuário!") public void deveRealizarPutUsuario() {
-	 * HttpEntity<Usuario> request = new HttpEntity<Usuario>(usuarioUpdate);
-	 * ResponseEntity<Usuario> resposta =
-	 * testRestTemplate.withBasicAuth("admin@email.com.br", "admin123")
-	 * .exchange("/usuarios/alterar", HttpMethod.PUT, request, Usuario.class);
-	 * assertEquals(HttpStatus.OK, resposta.getStatusCode()); }
-	 */
+	
+	/*@Test
+	 
+	@Order(3)
+	 
+	@DisplayName("😳 Alterar Usuário!") public void deveRealizarPutUsuario() {
+	 HttpEntity<Usuario> request = new HttpEntity<Usuario>(usuarioUpdate);
+	 ResponseEntity<Usuario> resposta =
+	 testRestTemplate.withBasicAuth("admin@email.com.br", "admin123")
+	 .exchange("/usuarios/alterar", HttpMethod.PUT, request, Usuario.class);
+	 assertEquals(HttpStatus.OK, resposta.getStatusCode()); }
+	*/
 
 }

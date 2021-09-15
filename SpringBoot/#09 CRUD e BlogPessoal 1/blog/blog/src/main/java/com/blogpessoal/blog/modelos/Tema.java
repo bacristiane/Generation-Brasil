@@ -15,8 +15,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 public class Tema {
-	private @Id  @GeneratedValue (strategy=GenerationType.IDENTITY)long idTema;
+	private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) long idTema;
 	private @NotBlank String tema;
+	
+	
 	@OneToMany(mappedBy = "tema",cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties({"tema"})
 	private List<Postagem> postagens = new ArrayList<>();

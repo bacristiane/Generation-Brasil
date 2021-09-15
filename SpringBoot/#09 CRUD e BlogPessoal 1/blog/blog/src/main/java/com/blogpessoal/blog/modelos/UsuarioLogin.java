@@ -1,7 +1,13 @@
 package com.blogpessoal.blog.modelos;
 
-public class UsuarioLogin {
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+public class UsuarioLogin {
+	
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long idUsuarioL;
 	private String nome; 
 	private String email;
 	private String senha;
@@ -30,4 +36,12 @@ public class UsuarioLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
+	public long getIdUsuarioL() {
+		return idUsuarioL;
+	}
+	public void setIdUsuarioL(long idUsuarioL) {
+		this.idUsuarioL = idUsuarioL;
+	}
+	
+	
 }
