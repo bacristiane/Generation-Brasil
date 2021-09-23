@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Fala, nubank!</title>
+    <link rel="icon"
+        href="https://blog.nubank.com.br/wp-content/uploads/2021/05/cropped-nu-Favicon-Master-Purple-android-chrome-512x512-1-1.png?w=32"
+        sizes="32x32">
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <a class="navbar-brand" href="#">
+                <svg width="32" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+                    <path
+                        d="M69.2,454.61c-2.69,44.18,0,88.37,0,131.21v417.76H303.92V620.64c0-119.17-1.34-224.94,0-247.71,4-101.75,32.19-170,84.5-224.94H376.35c-114,0-221.31,65.61-273.62,167.37C79.93,359.55,71.88,406.41,69.2,454.61Z">
+                    </path>
+                    <path
+                        d="M607.07,55.17c-87.18,0-162.3,34.81-218.63,92.39,174.37,0,288.38,119.16,293.74,308,1.34,42.85,2.69,275.82,2.69,275.82v271.81H919.59V636.27c0-111.13,1.34-207.54-6.71-273.14C890.08,178.35,777.42,55.17,607.07,55.17Z">
+                    </path>
+                    <path
+                        d="M1843.72,625.83c2.68-44.19,0-88.37,0-131.22V76.86H1609V459.8c0,119.16,1.34,224.94,0,247.7-4,103.1-32.19,170-85.85,226.28h12.07c114,0,221.32-65.61,273.63-167.37C1833,720.89,1841,674,1843.72,625.83Z">
+                    </path>
+                    <path
+                        d="M1305.85,1024.83c87.19,0,162.3-34.81,218.63-92.39-174.36,0-288.37-119.17-293.74-308-1.34-42.85-2.68-151.3-2.68-275.82V76.86H993.33V443.73c0,111.13-1.34,207.54,6.71,273.14C1022.84,901.65,1135.51,1024.83,1305.85,1024.83Z">
+                    </path>
+                </svg>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Nubank</strong> 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                           <strong>Produtos</strong> 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Seu Dinheiro</strong> 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Investimentos</strong> 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn " type="submit"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.6902 12.7726C13.2598 15.2341 9.31933 15.2341 6.88892 12.7726C4.45851 10.3111 4.45851 6.32028 6.88892 3.85878C9.31933 1.39729 13.2598 1.39729 15.6902 3.85878C18.1206 6.32028 18.1206 10.3111 15.6902 12.7726ZM6.61499 15.1539C9.81545 17.4036 14.2434 17.0842 17.0954 14.1958C20.3019 10.9483 20.3019 5.6831 17.0954 2.43562C13.8889 -0.811872 8.6902 -0.811872 5.48372 2.43562C2.40019 5.55858 2.28196 10.5475 5.12903 13.8136L0.5 18.6108L1.93922 19.9996L6.61499 15.1539Z"
+                                fill="#111111"></path>
+                        </svg></button>
+                </form>
+                <button type="button" class="btn btc">Quero Ser Nubank</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Barra de Navegação -->
+
+    <!-- Carrossel Inicial -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/img/Fiagro-header.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/Fiagro-header.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Fiagro-header.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carrossel Inicial -->
+
+    <!-- Mais lidas -->
+
+    <div class="container">
+        <div class="row ">
+            <div class="col p-2 mt-5">
+                <h2>Mais lidas</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row d-flex align-items-center ">
+            <div class="col-md-8">
+                <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/cartaovirtual-home.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/cartaovirtual-home.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/cartaovirtual-home.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <hr>
+                <p class="mlp"><strong>DINHEIRO NO MUNDO</strong></p>
+                <h3>Open Banking ou Open Finance: quais cuidados tomar para evitar golpes</h3>
+                <hr>
+                <p class="mlp"><strong>DINHEIRO NO MUNDO</strong></p>
+                <h3>Open Banking ou Open Finance: quais cuidados tomar para evitar golpes</h3>
+                <hr>
+                <p class="mlp"><strong>DINHEIRO NO MUNDO</strong></p>
+                <h3>Open Banking ou Open Finance: quais cuidados tomar para evitar golpes</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mais lidas -->
+
+    <!-- Desvende a inflação -->
+
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-8 p-5"> 
+                <h2>Desvende a inflação</h2>
+            </div>
+            <div class="col-4 p-5"> 
+                <p class="mlp "><strong>Ver todos →</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/Selic-IPCA_header-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mlp">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/Selic-IPCA_header-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mlp">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/Selic-IPCA_header-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mlp">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Desvende a inflação -->
+    <!-- Videos -->
+
+    <div class="container ">
+        <div class="row d-flex align-items-center ">
+            <div class="col-8 p-5"> 
+                <h2>Saiba mais sobre a Nu</h2>
+            </div>
+            <div class="col-4 p-5"> 
+                <p class="mlp "><strong>Ver todos →</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <iframe width="315" height="315" src="https://www.youtube.com/embed/VTxo8t1Cndc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title mlp">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <iframe  width="315" height="315" src="https://www.youtube.com/embed/078OxawqNLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title mlp">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <iframe width="315" height="315" src="https://www.youtube.com/embed/O7y2BLz5Zxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title mlp">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Videos -->
+
+    <!-- Formulário -->
+    <div class="container-fluid d-flex justify-content-center p-5 bgroxo">
+        <div>
+           <form>
+              <label for="nome">Nome:</label> <br>
+              <input class="bgroxo  border-bottom form-control" type="text" id="nome" onkeyup='validaNome()'>
+              <div id='txtNome'></div>
+              <br>
+              <label for="email">E-mail:</label> <br>
+              <input type="email" id="email" onkeyup='validaEmail()'>
+              <div id='txtEmail'></div>
+              <br>
+              <label for="assunto">Assunto:</label> <br>
+              <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+              <div id='txtAssunto'></div>
+              <br>
+              <br>
+              <button onclick="enviar()" >Enviar</button>
+           </form>
+        </div>
+    </div>
+         <!-- Formulário -->
+
+          <!-- Footer -->
+
+          <div class="container-fluid d-flex justify-content-center p-5">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-4">
+                <h5>Section</h5>
+                <hr>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-4">
+                <h5>Section</h5>
+                <hr>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-4">
+                <h5>Section</h5>
+                <hr>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+              <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

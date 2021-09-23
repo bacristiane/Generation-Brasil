@@ -1,0 +1,26 @@
+.mlp {
+    color: #820ad1;
+  }
+
+h2 {
+    font-size: 50px;
+    color: #111;
+}
+
+.bgroxo {
+    background-color: #820ad1;
+  }
+  .btc {
+  background-color: #820ad1;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 13px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 24px;
+  height: 48px;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+}
