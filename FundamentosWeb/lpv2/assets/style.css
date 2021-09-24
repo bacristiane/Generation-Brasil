@@ -1,0 +1,78 @@
+.mlp {
+    color: #820ad1;
+  }
+
+h2 {
+    font-size: 50px;
+    color: #111;
+}
+
+.news {
+  font-size: 50px;
+  color: #f5f5f5;
+  margin-bottom: 41px;
+  font-weight: 600;
+  padding-right: 84px;
+  line-height: 1;
+}
+
+.bgroxo {
+    background-color: #820ad1;
+  }
+
+.btc {
+  background-color: #820ad1;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 13px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 24px;
+  height: 48px;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.btnews {
+background-color: #000;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+padding: 13px 20px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+border-radius: 24px;
+height: 48px;
+text-align: center;
+cursor: pointer;
+color: #ffffff;
+}
+
+.btlabel {
+  display: block;
+  color: #f5f5f5;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btinput {
+  background: 0 0;
+  border: none;
+  border-bottom: 2px solid #f5f5f5;
+  font-size: 18px;
+  font-weight: 600;
+  color: #d57dff;
+  padding: 0;
+  padding-right: 32px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 49px;
+  outline: 0;
+  line-height: 24px;
+}
+
+

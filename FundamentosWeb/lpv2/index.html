@@ -309,21 +309,24 @@
     <!-- Formulário -->
     <div class="container-fluid d-flex justify-content-center p-5 bgroxo">
         <div>
+            <p class="p-2 news">Assine nossa 
+            <br>
+            newsletter 
+            <br>
+            com conteúdo 
+            <br>
+            exclusivo.</p>
            <form>
-              <label for="nome">Nome:</label> <br>
-              <input class="bgroxo  border-bottom form-control" type="text" id="nome" onkeyup='validaNome()'>
-              <div id='txtNome'></div>
-              <br>
-              <label for="email">E-mail:</label> <br>
-              <input type="email" id="email" onkeyup='validaEmail()'>
+              <label class="btlabel" for="email">E-mail:</label> <br>
+              <input class="bgroxo  border-bottom btinput" type="email" id="email" onkeyup='validaEmail()'>
               <div id='txtEmail'></div>
-              <br>
-              <label for="assunto">Assunto:</label> <br>
-              <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
-              <div id='txtAssunto'></div>
+              <button class="btn btnews" onclick="enviar()" >Quero assinar</button>
               <br>
               <br>
-              <button onclick="enviar()" >Enviar</button>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label fw-bold" for="flexCheckDefault">
+                Declaro que li a Política de Privacidade
+              </label>
            </form>
         </div>
     </div>
