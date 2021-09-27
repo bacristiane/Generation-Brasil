@@ -307,7 +307,7 @@
     <!-- Videos -->
 
     <!-- Formulário -->
-    <div class="container-fluid d-flex justify-content-center p-5 bgroxo">
+    <div class="container-fluid d-flex justify-content-center  p-5 bgroxo">
         <div>
             <p class="p-2 news">Assine nossa 
             <br>
@@ -318,13 +318,13 @@
             exclusivo.</p>
            <form>
               <label class="btlabel" for="email">E-mail:</label> <br>
-              <input class="bgroxo  border-bottom btinput" type="email" id="email" onkeyup='validaEmail()'>
-              <div id='txtEmail'></div>
+              <input class="bgroxo  border-bottom btinput" type="email" id="email" onkeyup='validaEmail()' placeholder="Seu e-mail" aria-label="Seu e-mail">
+              <div id='txtEmail' class=" mb-3"></div>
               <button class="btn btnews" onclick="enviar()" >Quero assinar</button>
               <br>
               <br>
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label fw-bold" for="flexCheckDefault">
+              <label class="form-check-label fw-bold politica" for="flexCheckDefault">
                 Declaro que li a Política de Privacidade
               </label>
            </form>
@@ -334,11 +334,11 @@
 
           <!-- Footer -->
 
-          <div class="container-fluid d-flex justify-content-center p-5">
+          <div class="container">
           <footer class="py-5">
             <div class="row">
               <div class="col-4">
-                <h5>Section</h5>
+                <h5 class="fw-normal">Explore</h5>
                 <hr>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -349,10 +349,10 @@
                 </ul>
               </div>
         
-              <div class="col-4">
-                <h5>Section</h5>
+              <div class="col-3">
+                <h5 class="fw-normal">Nubank</h5>
                 <hr>
-                <ul class="nav flex-column">
+                <ul class=" nav flex-column">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
@@ -362,9 +362,9 @@
               </div>
         
               <div class="col-4">
-                <h5>Section</h5>
+                <h5 class="fw-normal">Nossos produtos</h5>
                 <hr>
-                <ul class="nav flex-column">
+                <ul class="  nav flex-column">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
@@ -374,12 +374,12 @@
               </div>
             </div>
         
-            <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <div class="d-flex justify-content-between  py-4 my-4 border-top">
               <p>&copy; 2021 Company, Inc. All rights reserved.</p>
               <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="https://www.linkedin.com/company/nubank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><path d="M16 9.8088V16H12.5699V10.2237C12.5699 8.77337 12.0747 7.7829 10.8328 7.7829C9.88502 7.7829 9.32199 8.44972 9.07335 9.0954C8.98305 9.32615 8.95978 9.64658 8.95978 9.97022V15.9997H5.52945C5.52945 15.9997 5.57549 6.21663 5.52945 5.20395H8.96003V6.73381C8.95312 6.74586 8.9434 6.75764 8.93726 6.76915H8.96003V6.73381C9.41587 5.9998 10.2288 4.95044 12.0514 4.95044C14.3081 4.95044 16 6.49342 16 9.8088ZM1.94104 0C0.767666 0 0 0.806023 0 1.86502C0 2.90152 0.745411 3.73083 1.89602 3.73083H1.91827C3.11466 3.73083 3.85854 2.90152 3.85854 1.86502C3.83577 0.806023 3.11466 0 1.94104 0ZM0.203875 16H3.63292V5.20395H0.203875V16Z"></path></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="http://facebook.com.br/nubank"><svg width="16" height="16" viewbox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><path d="M12.316 0C5.51147 0 0 5.41646 0 12.0944C0 18.1312 4.50244 23.1355 10.3912 24.0431V15.5916H7.26241V12.0944H10.3912V9.42989C10.3912 6.399 12.2312 4.72535 15.0421 4.72535C16.3902 4.72535 17.7978 4.96266 17.7978 4.96266V7.93943H16.2461C14.7156 7.93943 14.2408 8.87201 14.2408 9.82957V12.0986H17.6579L17.111 15.5957H14.2408V24.0473C20.1296 23.1397 24.632 18.1354 24.632 12.0986C24.632 5.41646 19.1163 0 12.316 0Z"></path></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="https://twitter.com/nubank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewbox="0 0 16 14" ><path d="M14.3637 3.23688C14.3701 3.37822 14.3735 3.5207 14.3735 3.66318C14.3735 8.00144 11.0723 13.0021 5.03228 13.0021C3.17828 13.0021 1.4524 12.4603 0 11.5285C0.486813 11.5589 0.518223 11.5744 0.78308 11.5744C2.32166 11.5744 3.73672 11.0493 4.8605 10.1691C3.42418 10.1427 2.21135 9.19358 1.79367 7.88883C1.99361 7.92675 2.19986 7.948 2.41071 7.948C2.71004 7.948 3.00075 7.90894 3.27595 7.83367C1.77414 7.53262 0.642896 6.20604 0.642896 4.6146C0.642896 4.60081 0.642896 4.58645 0.64347 4.57323C1.08586 4.81856 1.59201 4.96678 2.12977 4.98345C1.2496 4.39571 0.669899 3.39028 0.669899 2.48157C0.669899 1.64947 0.83134 1.08528 1.11401 0.600381C2.73245 2.58709 5.15236 3.89357 7.88021 4.03145C7.82391 3.79073 7.79575 3.54081 7.79575 3.28285C7.79575 1.47021 9.2654 0 11.078 0C12.0248 0 12.8746 0.398722 13.4744 1.03645C14.223 0.889368 14.9239 0.617042 15.5599 0.239577C15.3129 1.00657 14.7941 1.64947 14.1144 2.05623C14.7791 1.97695 15.4134 1.80114 16 1.53973C15.5622 2.19699 15.0055 2.77554 14.3637 3.23688Z"></path></svg></a></li>
               </ul>
             </div>
           </footer>
@@ -392,6 +392,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

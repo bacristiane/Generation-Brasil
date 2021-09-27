@@ -53,7 +53,6 @@ color: #ffffff;
 .btlabel {
   display: block;
   color: #f5f5f5;
-  margin-bottom: 4px;
   font-weight: 600;
   font-size: 14px;
 }
@@ -70,9 +69,18 @@ color: #ffffff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 49px;
+  margin-bottom: 10px;
   outline: 0;
   line-height: 24px;
+  
 }
 
+input::placeholder {
+  color: #d57dff;
+  opacity: 2;
+}
+
+.politica{
+  color: #ffffff;
+}
 
